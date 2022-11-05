@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title>homepage</title>
+    <link rel="stylesheet" href="homepage.css" />
+</head>
+<body link="black" alink="black" vlink="black">
+    <font size="5">
+        <div class="header" id="myHeader">
+            <table align="center" width="100%" cellpadding="10" cellspacing="1">
+                <tr>
+                <td bgcolor="#0B1347" colspan="6" valign="center"><a href="homepage.html"><img src="images/fgs_name.png"></a></td>
+                <td bgcolor="white" align="center" rowspan="2"><img src="images/fgs_logo.png" height="150px" width="150px"></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="red" height="50px"><a href="aboutus.html">About Us</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="pedagogy.html">Our Pedagogy</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="beyondacademics.html">Beyond Academics</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="admissions.html">Admissions</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="facilities.html">Facilities</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="contactus.html">Contact Us</a></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+    </font>
+    <font>
+        <img src="images/USP.jpg" width="100%" height="300" alt="usp">
+        <br><br>
+        <h1><center>USPs</center></h1>
+        <hr width="80%" noshade="#000" size="3">
+        <center>
+        <img src="images/usp1.png" alt="usp1" width="80%" height="275">
+        <img src="images/usp2.png" alt="usp1" width="80%" height="275">
+        <img src="images/usp3.png" alt="usp1" width="80%" height="275">
+        <img src="images/usp4.png" alt="usp1" width="80%" height="275">
+        <img src="images/usp5.png" alt="usp1" width="365" height="275">
+        </center>
+        <br><br>
+        <h1><center>WORLD CLASS INFRASTRUCTURE</center></h1>
+        <hr width="80%" noshade="#000" size="3"><br><br>
+        <p align="center">
+            Good School infrastructure has a positive correlation with better learning outcomes of 
+            students. Keeping this in mind, we have synthesised the very best infrastructure in our 
+            schools. Right from spacious & well- ventilated classrooms to well stocked libraries, sprawling 
+            playgrounds to well-equipped labs, we have taken care of every facility, as per international standards. 
+            All items like desks & chairs, and other furniture; have been ergonomically curated. Basic utilities such 
+            as water, electricity etc. have been optimally provisioned, as per the highest norms. Our classrooms, 
+            auditoriums, assembly areas and all habitable zones conform to global safety and utility specifications. 
+            Well-maintained sanitation facilities for well-being of children and technology leveraged intelligence have 
+            been woven into all aspects of our schooling infrastructure.
+        </p><br><br>
+        <center>
+        <img src="images/infra.png" alt="infrastructure" width="80%" height="650">
+        </center>
+    </font>
+</body>
+</html>

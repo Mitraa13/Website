@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+    <title>homepage</title>
+    <link rel="stylesheet" href="homepage.css" />
+</head>
+<body link="black" alink="black" vlink="black">
+    <font size="5">
+<div class="header" id="myHeader">
+    <table align="center" width="100%" cellpadding="10" cellspacing="1">
+        <tr>
+        <td bgcolor="#0B1347" colspan="6" valign="center"><a href="homepage.html"><img src="images/fgs_name.png"></a></td>
+        <td bgcolor="white" align="center" rowspan="2"><img src="images/fgs_logo.png" height="150px" width="150px"></td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="red" height="50px"><a href="aboutus.html">About Us</a></td>
+            <td align="center" bgcolor="red" height="50px"><a href="pedagogy.html">Our Pedagogy</a></td>
+            <td align="center" bgcolor="red" height="50px"><a href="beyondacademics.html">Beyond Academics</a></td>
+            <td align="center" bgcolor="red" height="50px"><a href="admissions.html">Admissions</a></td>
+            <td align="center" bgcolor="red" height="50px"><a href="facilities.html">Facilities</a></td>
+            <td align="center" bgcolor="red" height="50px"><a href="contactus.html">Contact Us</a></td>
+        </tr>
+    </table>
+</div>
+    </font>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        function myFunction() {
+          document.getElementById("main").style.margin = "50px 150px 150px 150px";
+        }
+        </script>
+      
+<!-- Slideshow container -->
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="images/slide1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="images/slide2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="images/slide3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="images/slide4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="images/slide5.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+  <!-- end of slideshow -->
+
+    <div id="main">
+        <h1 align="center">OUR PHILOSOPHY</h1>
+        <hr width="75%" size="3" noshade="#000">
+        <p align="center">Our philosophy is holistic and profound, as it encompasses all aspects of life 
+            that transforms an individual into a well rounded personality. We ardently 
+            believe in developing both mind and body such that our children grow up into 
+            healthy, thoughtful and winning adults. We have devised a framework for success 
+            that consists of SIX Pillars.</p>
+        <hr width="25%" size="3" noshade="#000">
+        <h3><center>TOTAL ACADEMIC EXCELLENCE AND HIGH IQ</center></h3>
+        <p align="center">“SUCCESS is never an accident. It is always the result of a commitment to 
+            Excellence, intelligent planning, and focused effort.” FIITJEE Global School 
+            is committed to achieving superlative Academic Excellence. We are adopting the 
+            best curriculum, curating the best teachers and delivering value through 
+            innovative means. We have taken special care to handpick faculty who share the 
+            same rigor and discipline that we possess. Our innovative teaching methodology 
+            makes us deliver a very high value to the learning process and whet the 
+            inquisitive appetite of our students. Right from children’s initiation into 
+            schooling we focus on a differentiated learning paradigm whereby the child’s 
+            interest is kindled in diverse subjects. This curiosity and eagerness are 
+            sustained in subsequent years by introducing deeper concepts, thereafter 
+            leading to the development of historical perspectives, mathematical ability and
+            logical thinking. A balanced world-view is what we instill over the course of 
+            the students’ school journey. In synchronization with our flagship company, 
+            FIITJEE’s legacy of superlative success in tough competitive examinations like 
+            IIT-JEE, NEET and other entrance tests, FIITJEE Global School has natural 
+            affinity to unparalleled excellence in “Competitive Academics”. Our efforts in 
+            Academia would eventually manifest itself in stupendous results in Boards and 
+            Competitive Exams.</p>
+        <hr width="25%" size="3" noshade="#000">
+        <h3><center>DEVELOPING EFFECTIVE COMMUNICATION SKILLS</center></h3>
+        <p align="center">“Communication is the human connection that is the key to personal 
+            and career success”. “Good Communication skills not only build bridges but also 
+            take one to the pinnacle of success.” We at FIITJEE Global School give immense 
+            focus to the all-round development of communication capabilities. On one hand we 
+            develop the requisite expertise in Listening, Speaking, Reading and Writing and 
+            on the other; we encourage the students to delve into public speaking, recitation,
+            debating and group discussions. Our commitment to communication is such that we 
+            guarantee dexterity in at least two more languages apart from the ever important 
+            English language. We promote our students to opt for a second international language 
+            that would make them globally competitive. Our Department of English has been 
+            entrusted with the additional responsibility to hone the all round communication 
+            abilities and personality of students.</p>
+        <hr width="25%" size="3" noshade="#000">
+        <h3><center>SPORTS FOR PHYSICAL FITNESS AS A DISCIPLINE IN LIFE</center></h3>
+        <p align="center">“Sport is such a great teacher. It teaches camaraderie, humility, 
+            how to resolve differences”. “Sports creates character, builds character, and 
+            reveals character” is a truism and embodies the FIITJEE Global School approach 
+            to sports as a mechanism to not only keep fit but to also teach us self-discipline 
+            and lead to character building. We believe that sports spurs physical fitness as a 
+            discipline in life; hence we promote a myriad range of competitive anrnationally 
+            popular sports both within and outside the campus. We encourage students to take up 
+            at least one sport as a mandatory discipline. We envisage our children to partake in 
+            advanced & professional level sports championships and showcase their mettle. Our proposed 
+            association with prestigious sports bodies and institutions like MRF Academy, Pace Foundation,
+            Mahesh Bhupathi Academy of Tennis etc. encourages our students to experience the very 
+            best in class facilities and develop their innate sporting talents like never before.</p>
+        <hr width="25%" size="3" noshade="#000">
+        <h3><center>LIVE THE CULTURE TO INCULCATE RIGHT VALUE SYSTEM AND HIGH EQ</center></h3>
+        <p align="center">“Culture is the curry that enhances the taste of life.” “A nation's culture 
+            resides in the hearts and in the soul of its people”. The famous words of Mahatma Gandhi 
+            inspire us. We try hard to instil the wisdom of our great Indian culture in our students. 
+            We are pledged to inculcate a high standard value system amongst the children that we nurture. 
+            We pride in our Indianness and bask in the glory of the ancient wisdom of our country’s 
+            diversity. Culture is built through active engagement in plays, workshops, skits, lectures, 
+            excursions and heritage expeditions etc. For a full understanding, kindly visit our Culture section; 
+            it would give further insight into our world of culture.</p>
+        <hr width="25%" size="3" noshade="#000">
+        <h3><center>YOGA AND MEDITATION FOR PHYSICAL, MENTAL FITNESS AND DEVELOPING HIGH SQ</center></h3>
+        <p align="center">“Yoga is not the option to a good life, it is the basis of a 
+            great life.” “When the breath wanders the mind also is unsteady, but when the breath 
+            is calmed the mind too will be still, and the yogi achieves long life. Therefore, 
+            one should learn to control the breath.” –Courtesy Hatha Yoga Pradipika. We practice 
+            and preach the tenets of Yoga and Pranayama in our schools as we believe that they 
+            increase physical, mental and spiritual fitness. The yogic kriyas and asanas are taught 
+            by maestros and certified professionals. We want our children to be psycho-physically 
+            fit such that they are forever sharp in their mind and body. Due care is taken to ensure 
+            age-appropriate yoga routines and special attention is given to safe practices that are 
+            child-friendly.</p>
+        <hr width="25%" size="3" noshade="#000">
+        <h3><center>DEVELOPING WINNING ATTITUDE ESSENTIAL FOR SUCCESS</center></h3>
+        <p align="center">“The Altitude that you want to climb to is defined by your Attitude and 
+            Capacity for Hard work”. “Your attitude decides your altitude” is our credo and hence 
+            we take pains to nurture the right attitude in our children. Without the development 
+            of the right attitude, one can find it difficult to succeed in life. In order to achieve 
+            the balanced combination of a positive mental attitude and a personable personality, we 
+            calibrate the minds of the students. This is done through a minute observation by a panel 
+            of behavioural experts who try to unleash and develop the hidden talents of the students. 
+            Special emphasis is given to the flowering of amiable personality traits that lead to 
+            success. Our mantra is simple- “Foster the right attitude & let the personality blossom 
+            then success becomes the only outcome.”</p>
+        </div>
+</body>
+</html>

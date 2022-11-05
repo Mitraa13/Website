@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <title>homepage</title>
+    <link rel="stylesheet" href="homepage.css" />
+</head>
+<body link="black" alink="black" vlink="black">
+    <font size="5">
+        <div class="header" id="myHeader">
+            <table align="center" width="100%" cellpadding="10" cellspacing="1">
+                <tr>
+                <td bgcolor="#0B1347" colspan="6" valign="center"><a href="homepage.html"><img src="images/fgs_name.png"></a></td>
+                <td bgcolor="white" align="center" rowspan="2"><img src="images/fgs_logo.png" height="150px" width="150px"></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="red" height="50px"><a href="aboutus.html">About Us</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="pedagogy.html">Our Pedagogy</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="beyondacademics.html">Beyond Academics</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="admissions.html">Admissions</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="facilities.html">Facilities</a></td>
+                    <td align="center" bgcolor="red" height="50px"><a href="contactus.html">Contact Us</a></td>
+                </tr>
+            </table>
+        </div>
+    </font>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        
+        function myFunction() {
+        document.getElementById("main").style.margin = "50px 150px 50px 150px";
+        }
+      </script>
+    <div id="main">
+
+      <h1><center>Admission Application Form</center></h1>
+      <hr width="80%" noshade="black" size="3">
+      <p align="center">Please provide the following details to register your ward</p>
+      <form>
+      <fieldset style="padding: 20px;">
+        <legend>Student Details</legend>
+        <div class="row">
+          <div class="column">
+            Class in which Admission is sought:<br>
+            <select name="Class">
+              <option value="Select">-----Select Class-----</option>
+              <option value="P.K.G">Pre K.G.</option>
+              <option value="L.K.G">L.K.G.</option>
+              <option value="U.K.G">U.K.G.</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+              <option value="3">III</option>
+              <option value="4">IV</option>
+              <option value="5">V</option>
+              <option value="6">VI</option>
+              <option value="7">VII</option>
+              <option value="8">VIII</option>
+              <option value="9">IX</option>
+              <option value="10">X</option>
+              <option value="11">XI</option>
+            </select>
+            <br><br>
+            First Name: <br>
+            <input type="text" name="FirstName" size="20">
+          </div>
+          <div class="column">
+            School Branch:<br>
+            <select name="branch">
+              <option value="select">--Select School Branch--</option>
+              <option value="chennai">Chennai(Vengambakkam)</option>
+              <option value="vellore">Vellore</option>
+            </select><br><br>
+            Middle Name:<br>
+            <input type="text" name="middlename" size="20">
+          </div>
+          <div class="column">
+            Academic year:<br>
+            <input type="text" name="AY" size="20"><br><br>
+            Last Name:<br>
+            <input type="text" name="lastname" size="20">
+          </div>
+        </div>
+      </fieldset>
+      <br><br>
+      <br>
+      <fieldset style="padding: 20px;">
+        <legend>Contact Details</legend>
+        <div class="row">
+          <div class="column">
+            Address Line 1:<br>
+            <input type="text" name="add1">
+            <br><br>
+            City:<br>
+            <input type="text" name="city">
+            <br><br>
+            Email Id:<br>
+            <input type="text" name="email">
+            <br><br>
+          </div>
+          <div class="column">
+            Address Line 2:<br>
+            <input type="text" name="add2">
+            <br><br>
+            State:<br>
+            <input type="text" name="state">
+            <br><br>
+            Mobile Number:<br>
+            <input type="text" name="mobile">
+            <br><br>
+          </div>
+          <div class="column">
+            Pincode:<br>
+            <input type="text" name="pincode">
+            <br><br>
+            Country:<br>
+            <input type="text" name="country">
+            <br><br>
+            Remarks:<br>
+            <input type="text" name="remarks">
+            <br><br>
+          </div>
+        </div>
+      </fieldset>
+      <p align="center">
+        <input type="submit" value="Submit">
+      </p>
+      </form>
+  </div>    
+<!-- Slideshow container -->
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="images/chennaicampus.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="images/vellorecampus.png" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+<!-- end of slideshow -->
+
+</body>
+</html>
